@@ -26,7 +26,6 @@ export default class Index extends Component {
     return (
       <View className='index' style={{width:windowWidth,height:windowHeight}}>
         <View className='content-home'>
-
           <View className='title-home'>
             <Text> 掌  上  健  身  房 </Text>
           </View>

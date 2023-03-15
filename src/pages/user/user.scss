@@ -1,0 +1,43 @@
+.user{
+    background-image: url('../../static/home/homeBg.jpg');
+    background-size: 100% 100%;
+    padding-top: 30px;
+    .userBox{
+        width: 90%;
+        height: 250px;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        .userAvatar{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url('../../static/images/avatar.jpg');
+            background-size: 100% 100%;
+            margin-right: 15px;
+        }
+        .userDetail{
+            width: 400px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+            .userName{
+                width: 380px;
+                color: #fff;
+                font-size: 40px;
+                font-weight: 800;
+                margin-bottom: 15px;
+            }
+            .suerSign{
+                width: 380px;
+                font-size: 30px;
+                color: #ffd000;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

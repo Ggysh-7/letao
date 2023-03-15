@@ -1,57 +1,34 @@
 import { Component } from 'react'
-import { View, Text, Swiper, SwiperItem, Image } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import './user.scss'
 
 export default class user extends Component {
   constructor(props){
     super(props);
     this.state = {
-
-      swiperImg:[
-        {
-          imgSrc:'/static/tabBar/home.png',
-        },
-        {
-          imgSrc:'/static/tabBar/home.png',
-        },
-      ],
+      windowWidth:'100%',
+      windowHeight:'100%',
     }
   }
-  componentWillMount () { }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
+  componentWillMount () { 
+    var windowWidth = wx.getSystemInfoSync().windowWidth;
+    var windowHeight = wx.getSystemInfoSync().windowHeight;
+    this.setState({windowWidth:windowWidth,windowHeight:windowHeight})
+  }
+  componentDidMount () { 
+    console.log(this.state.windowWidth,this.state.windowHeight);
+  }
   render () {
-    const { swiperImg } = this.state
+    const { windowWidth,windowHeight } = this.state
     return (
-      <View className='user'>
-        <Text>我的123</Text>
-          <Swiper
-            className='swiper-home'
-            indicatorColor='#999'
-            indicatorActiveColor='#333'
-            circular
-            indicatorDots
-            autoplay>
-              {
-                swiperImg.map((item,index)=>{
-                  return(
-                    <SwiperItem key={index}>
-                      <Image
-                        style='width: 100%;height: 100%;'
-                        src={item.imgSrc}
-                      />
-                    </SwiperItem>
-                  )
-                })
-              }
-          </Swiper>
+      <View className='user' style={{minWidth:windowWidth,minHeight:windowHeight}}>
+        <View className='userBox'>
+          <View className='userAvatar'></View>
+          <View className='userDetail'>
+            <View className='userName'>ggg国语</View>
+            <View className='suerSign'>我爱学习我很敬业</View>
+          </View>
+        </View>
       </View>
     )
   }
