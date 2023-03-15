@@ -25,7 +25,9 @@ export default class ordercourse extends Component {
     const { windowWidth,windowHeight,numberOfLines } = this.state
     return (
       <View className='ordercourse' style={{minWidth:windowWidth,minHeight:windowHeight}}>
-        <View className='courseBox-ordercourse'>
+        <View className='courseBox-ordercourse' onClick={()=>{
+          console.log('123')
+        }}>
           <View className='courseCard-ordercourse'>
             <View className='courseImg-ordercourse' style={{backgroundImage:`url(${Images.knowledge1})`,backgroundSize:'100% 100%'}}></View>
             <View className='courseDetail-ordercourse'>

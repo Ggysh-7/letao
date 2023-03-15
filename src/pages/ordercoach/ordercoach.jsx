@@ -24,7 +24,9 @@ export default class ordercoach extends Component {
     const { windowWidth,windowHeight } = this.state
     return (
       <View className='ordercoach' style={{minWidth:windowWidth,minHeight:windowHeight}}>
-        <View className='coachBox-ordercoach'>
+        <View className='coachBox-ordercoach' onClick={()=>{
+          console.log('123')
+        }}>
           <View className='coachCard-ordercoach'>
             <View className='coachImg-ordercoach' style={{backgroundImage:`url(${Images.coach1})`,backgroundSize:'100% 100%'}}></View>
             <View className='coachDetail-ordercoach'>
