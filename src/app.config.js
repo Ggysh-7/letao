@@ -8,6 +8,9 @@ export default defineAppConfig({
     'pages/ordercoach/ordercoach',
     'pages/ordercourse/ordercourse',
     'pages/selfdefined/selfdefined',
+
+    //内置页面
+    'pages/knowledgeDetail/knowledgeDetail',
   ],
   window: {
     backgroundTextStyle: 'dark',
