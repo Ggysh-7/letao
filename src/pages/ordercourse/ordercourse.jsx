@@ -29,7 +29,7 @@ export default class ordercourse extends Component {
           console.log('123')
         }}>
           <View className='courseCard-ordercourse'>
-            <View className='courseImg-ordercourse' style={{backgroundImage:`url(${Images.knowledge1})`,backgroundSize:'100% 100%'}}></View>
+            <View className='courseImg-ordercourse' style={{backgroundImage:`url(${Images.course1})`,backgroundSize:'100% 100%'}}></View>
             <View className='courseDetail-ordercourse'>
               <View className='courseName-ordercourse'>深蹲训练</View>
               <View className='courseInfo-ordercourse'>标准深蹲x15；负重深蹲x10；拉伸。</View>
@@ -40,7 +40,7 @@ export default class ordercourse extends Component {
 
         <View className='courseBox-ordercourse'>
           <View className='courseCard-ordercourse'>
-            <View className='courseImg-ordercourse' style={{backgroundImage:`url(${Images.knowledge1})`,backgroundSize:'100% 100%'}}></View>
+            <View className='courseImg-ordercourse' style={{backgroundImage:`url(${Images.course2})`,backgroundSize:'100% 100%'}}></View>
             <View className='courseDetail-ordercourse'>
               <View className='courseName-ordercourse'>深蹲训练</View>
               <View className='courseInfo-ordercourse'><Text numberOfLines={numberOfLines}>标准深蹲x15；负重深蹲x10；拉伸。标准深蹲x15；负重深蹲x10；拉伸。标准深蹲x15；负重深蹲x10；拉伸。标准深蹲x15；负重深蹲x10；拉伸。</Text></View>

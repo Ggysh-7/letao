@@ -11,6 +11,9 @@ const Images = {
     coach2:require('./coach2.png'),
     coach3:require('./coach3.png'),
     coach4:require('./coach4.png'),
+    //预约课程
+    course1:require('./course1.jpg'),
+    course2:require('./course2.jpg'),
 }
 
 export {

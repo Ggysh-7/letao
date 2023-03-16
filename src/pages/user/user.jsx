@@ -74,7 +74,7 @@ export default class user extends Component {
             <View className='infoNam'>关于我们</View>
             <View className='expandBtn'>{'>'}</View>
           </View>
-
+          <View style={{width:'100%',borderBottom:'1px solid grey',margin:' 7px  auto'}}></View>
           <View className='infoBigboxItem' onClick={()=>{
             console.log('123')
           }}>          

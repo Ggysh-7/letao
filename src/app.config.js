@@ -11,6 +11,7 @@ export default defineAppConfig({
 
     //内置页面
     'pages/knowledgeDetail/knowledgeDetail',
+    'pages/coachDetail/coachDetail',
   ],
   window: {
     backgroundTextStyle: 'dark',
