@@ -1,8 +1,8 @@
 import { Component } from 'react'
 import { View,Image } from '@tarojs/components'
-import './aboutUs.scss'
+import './aboutus.scss'
 
-export default class selfdefined extends Component {
+export default class aboutus extends Component {
   constructor(props){
     super(props);
     this.state = {

@@ -79,6 +79,10 @@
         display: flex;
         justify-content: space-between;
         padding: 20px;
+        .infoNam{
+            display: flex;
+            align-items: center;
+        }
         .expandBtn{
             font-weight: bold;
         }
@@ -94,6 +98,10 @@
             display: flex;
             justify-content: space-between;
             // border-bottom: 1px solid grey;
+            .infoNam{
+                display: flex;
+                align-items: center;
+            }
             .expandBtn{
                 font-weight: bold;
             }

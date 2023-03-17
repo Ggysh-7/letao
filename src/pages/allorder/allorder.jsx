@@ -1,14 +1,13 @@
 import { Component } from 'react'
 import { View } from '@tarojs/components'
-import './selfdefined.scss'
+import './allorder.scss'
 
-export default class selfdefined extends Component {
+export default class allorder extends Component {
   constructor(props){
     super(props);
     this.state = {
       windowWidth:'100%',
       windowHeight:'100%',
-
     }
   }
   componentWillMount () { 
@@ -29,12 +28,8 @@ export default class selfdefined extends Component {
   render () {
     const { windowWidth,windowHeight } = this.state
     return (
-      <View className='selfdefined' style={{minWidth:windowWidth,minHeight:windowHeight}}>
-        <View className='btnBox'>
-          <View className='letaoBtn'>
-            <View className='btnText'>添加运动</View>
-          </View>
-        </View>
+      <View className='allorder' style={{minWidth:windowWidth,minHeight:windowHeight}}>
+        123
       </View>
     )
   }

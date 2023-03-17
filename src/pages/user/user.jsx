@@ -2,8 +2,7 @@ import { Component } from 'react'
 import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import './user.scss'
-// import  React from "react";
-// import { Ellipsis } from '@nutui/nutui-react';
+import { OsIcon } from 'ossaui'
 
 export default class user extends Component {
   constructor(props){
@@ -48,40 +47,58 @@ export default class user extends Component {
         </View>
 
         <View className='infoBox' onClick={()=>{
-          console.log('123')
-        }}>
-          <View className='infoNam'>我的全部预约</View>
+            Taro.navigateTo({
+              url:'/pages/allorder/allorder',
+            })
+          }}>
+          <View className='infoNam'>
+            <OsIcon type='inform'></OsIcon>
+            <View style={{marginLeft:'5px'}}>我的全部预约</View>
+            
+          </View>
           <View className='expandBtn'>{'>'}</View>
         </View>
 
         <View className='infoBox' onClick={()=>{
           console.log('123')
         }}>
-          <View className='infoNam'>我的购物车</View>
+          <View className='infoNam'>
+            <OsIcon type='detail-cart'></OsIcon>
+            <View style={{marginLeft:'5px'}}>我的购物车</View>
+          </View>
           <View className='expandBtn'>{'>'}</View>
         </View>
 
         <View className='infoBox' onClick={()=>{
           console.log('123')
         }}>
-          <View className='infoNam'>我的个人资料</View>
+          <View className='infoNam'>
+            <OsIcon type='user'></OsIcon>
+            <View style={{marginLeft:'5px'}}>我的个人资料</View>
+          </View>
           <View className='expandBtn'>{'>'}</View>
         </View>
 
         <View className='infoBigbox'>
           <View className='infoBigboxItem' onClick={()=>{
             Taro.navigateTo({
-              url:'/pages/aboutUs/aboutUs',
+              url:'/pages/aboutus/aboutus',
             })
           }}>
-            <View className='infoNam'>关于我们</View>
+            <View className='infoNam'>
+              <OsIcon type='my-group-buying'></OsIcon>
+              <View style={{marginLeft:'5px'}}>关于我们</View>
+            </View>
             <View className='expandBtn'>{'>'}</View>
           </View>
           <View style={{width:'100%',borderBottom:'1px solid grey',margin:' 7px  auto'}}></View>
           <View className='infoBigboxItem' onClick={()=>{
             console.log('123')
           }}>          
-            <View className='infoNam'>联系作者了解更多详情</View>
+            <View className='infoNam'>
+              <OsIcon type='service'></OsIcon>
+              <View style={{marginLeft:'5px'}}>联系作者了解更多详情</View>
+            </View>
             <View className='expandBtn'>{'>'}</View>
           </View>
         </View>

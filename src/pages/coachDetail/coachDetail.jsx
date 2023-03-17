@@ -1,10 +1,10 @@
 import { Component } from 'react'
 import { View } from '@tarojs/components'
-import './coachDetail.scss'
+import './coachdetail.scss'
 import { getCurrentInstance } from '@tarojs/taro'
 import { Images } from '../../static/images/Images'
 
-export default class knowledge extends Component {
+export default class coachdetail extends Component {
   constructor(props){
     super(props);
     this.state = {

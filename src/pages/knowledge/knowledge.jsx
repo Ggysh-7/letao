@@ -67,7 +67,7 @@ export default class knowledge extends Component {
             return (
               <View key={key} className='articleBox-knowledge' onClick={()=>{
                 Taro.navigateTo({
-                  url:`/pages/knowledgeDetail/knowledgeDetail?title=${item.articleTit}&author=${item.articleAuthor}&content=${item.articleContent}&firstImg=${item.articleImg}
+                  url:`/pages/knowledgedetail/knowledgedetail?title=${item.articleTit}&author=${item.articleAuthor}&content=${item.articleContent}&firstImg=${item.articleImg}
                   &firstMsg=${item.articleContent.firstMsg}&secondMsg=${item.articleContent.secondMsg}
                   &thirdMsg=${item.articleContent.thirdMsg}&fourthMsg=${item.articleContent.fourthMsg}
                   &fifthMsg=${item.articleContent.fifthMsg}&sixthMsg=${item.articleContent.sixthMsg}

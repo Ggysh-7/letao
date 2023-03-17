@@ -1,9 +1,9 @@
 import { Component } from 'react'
 import { View } from '@tarojs/components'
-import './knowledgeDetail.scss'
+import './knowledgedetail.scss'
 import { getCurrentInstance } from '@tarojs/taro'
 
-export default class knowledge extends Component {
+export default class knowledgedetail extends Component {
   constructor(props){
     super(props);
     this.state = {

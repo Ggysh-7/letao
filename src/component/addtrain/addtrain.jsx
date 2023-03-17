@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import { View } from '@tarojs/components'
-import './selfdefined.scss'
+import './addtrain.scss'
 
 export default class selfdefined extends Component {
   constructor(props){
@@ -8,7 +8,6 @@ export default class selfdefined extends Component {
     this.state = {
       windowWidth:'100%',
       windowHeight:'100%',
-
     }
   }
   componentWillMount () { 
@@ -20,21 +19,11 @@ export default class selfdefined extends Component {
     console.log(this.state.windowWidth,this.state.windowHeight);
   }
 
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
   render () {
     const { windowWidth,windowHeight } = this.state
     return (
-      <View className='selfdefined' style={{minWidth:windowWidth,minHeight:windowHeight}}>
-        <View className='btnBox'>
-          <View className='letaoBtn'>
-            <View className='btnText'>添加运动</View>
-          </View>
-        </View>
+      <View className='addtrain' style={{width:windowWidth,height:windowHeight}}>
+        123456
       </View>
     )
   }

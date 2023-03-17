@@ -10,9 +10,10 @@ export default defineAppConfig({
     'pages/selfdefined/selfdefined',
 
     //内置页面
-    'pages/knowledgeDetail/knowledgeDetail',
-    'pages/coachDetail/coachDetail',
-    'pages/aboutUs/aboutUs',
+    'pages/knowledgedetail/knowledgedetail',
+    'pages/coachdetail/coachdetail',
+    'pages/aboutus/aboutus',
+    'pages/allorder/allorder',
 
   ],
   window: {
@@ -22,6 +23,7 @@ export default defineAppConfig({
     navigationBarTextStyle: 'white',
   },
   tabBar:{
+    // custom: true,
     backgroundColor:'#fff',
     color:'#000000',
     selectedColor:'#3399FF',

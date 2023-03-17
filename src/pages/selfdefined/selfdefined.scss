@@ -1,0 +1,15 @@
+.selfdefined{
+    font-size: 30px;
+    font-weight: normal;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(58, 58, 58);
+    .btnBox{
+        width: 100%;
+        height: 180px;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

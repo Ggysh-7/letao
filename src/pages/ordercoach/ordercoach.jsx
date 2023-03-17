@@ -67,7 +67,7 @@ export default class ordercoach extends Component {
               return (
                 <View className='coachBox-ordercoach' onClick={()=>{
                   Taro.navigateTo({
-                          url:`/pages/coachDetail/coachDetail?id=${key}`,
+                          url:`/pages/coachdetail/coachdetail?id=${key}`,
                   })
                 }}>
                   <View className='coachCard-ordercoach'>
@@ -75,7 +75,9 @@ export default class ordercoach extends Component {
                     <View className='coachDetail-ordercoach'>
                       <View className='coachName-ordercoach'>{ item.coachName }</View>
                       <View className='coachInfo-ordercoach'>{ item.coachInfo }</View>
-                      <View className='coachOrder-ordercoach'>{ item.coachOrder ? '可预约' : '预约已满'}</View>
+                      <View className='coachOrder-ordercoach'>
+                        { item.coachOrder ? '可预约' : '预约已满'}
+                      </View>
                     </View>
                   </View>
                 </View>
