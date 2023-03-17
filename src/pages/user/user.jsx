@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import './user.scss'
 // import  React from "react";
@@ -69,7 +70,9 @@ export default class user extends Component {
 
         <View className='infoBigbox'>
           <View className='infoBigboxItem' onClick={()=>{
-            console.log('123')
+            Taro.navigateTo({
+              url:'/pages/aboutUs/aboutUs',
+            })
           }}>
             <View className='infoNam'>关于我们</View>
             <View className='expandBtn'>{'>'}</View>
