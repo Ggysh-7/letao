@@ -3,6 +3,7 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
+    'pages/friendgroup/friendgroup',
     'pages/user/user',
     'pages/knowledge/knowledge',
     'pages/ordercoach/ordercoach',
@@ -34,6 +35,12 @@ export default defineAppConfig({
         iconPath:'./static/tabBar/homeout.jpg',
         selectedIconPath:'./static/tabBar/home.png',
         text:'首页'
+      },
+      {
+        pagePath:'pages/friendgroup/friendgroup',
+        iconPath:'./static/tabBar/movementout.jpg',
+        selectedIconPath:'./static/tabBar/movement.png',
+        text:'运动圈'
       },
       {
         pagePath:'pages/user/user',
