@@ -22,6 +22,9 @@ export default class friendgroup extends Component {
             userAvatar:Images.xlAvatar,
             userNam:'叫我龙哥',
             userText:'啤酒脏腰小烧烤 叫我龙哥你记好！！',
+            stateLike:true,
+            stateTalk:false,
+            talkValue:'',
             userTextImgArr:[
                 Images.xlImg,
             ]
@@ -31,6 +34,9 @@ export default class friendgroup extends Component {
             userAvatar:Images.wytAvatar,
             userNam:'魏来很美好',
             userText:'在给女朋友做晚饭 嘤嘤嘤',
+            stateLike:false,
+            stateTalk:false,
+            talkValue:'',
             userTextImgArr:[
                 Images.wytImg,
             ]
@@ -40,6 +46,9 @@ export default class friendgroup extends Component {
             userAvatar:Images.xswAvatar,
             userNam:'夏E谋',
             userText:'##是结束也是开始',
+            stateLike:false,
+            stateTalk:false,
+            talkValue:'',
             userTextImgArr:[
                 Images.xswImg,
             ]
@@ -49,6 +58,9 @@ export default class friendgroup extends Component {
             userAvatar:Images.qhxAvatar,
             userNam:'无极剑圣秦蒙面',
             userText:'强迫老大给我染头',
+            stateLike:true,
+            stateTalk:false,
+            talkValue:'',
             userTextImgArr:[
                 Images.qhxImg,
             ]

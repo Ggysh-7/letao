@@ -1,3 +1,3 @@
 export default definePageConfig({
-  navigationBarTitleText: '健身小课堂'
+  navigationBarTitleText: '健身常识'
 })

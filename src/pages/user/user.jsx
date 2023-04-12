@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro'
 import { View } from '@tarojs/components'
 import './user.scss'
 import { OsIcon } from 'ossaui'
+import { axios } from 'taro-axios'
 
 export default class user extends Component {
   constructor(props){
@@ -12,6 +13,15 @@ export default class user extends Component {
       windowHeight:'100%',
     }
   }
+
+  onGet = () => {
+    axios({
+      method: 'GET',
+      url: 'https://localhost:3000/comments',
+    })
+    console.log('123');
+  }
+
   componentWillMount () { 
     var windowWidth = wx.getSystemInfoSync().windowWidth;
     var windowHeight = wx.getSystemInfoSync().windowHeight;
@@ -33,7 +43,8 @@ export default class user extends Component {
         </View>
 
         <View className='orderToday' onClick={()=>{
-          console.log('123')
+          this.onGet()
+          console.log('gggysh')
         }}>
           <View className='orderTodayTit'>我的今日预约</View>
           <View className='orderTodayTitContent'>

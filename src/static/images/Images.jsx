@@ -1,14 +1,18 @@
 const Images = {
     //首页
-    homeBg: require('./homeBg.jpg'),
-    homeKnl: require('./homeKnl.jpg'),
+    homeBg: require('./home/homeBg.jpg'),
+    homeKnl: require('./home/homeKnl.jpg'),
     //朋友圈背景
-    groupBg: require('./groupBg.jpg'),
+    groupBg: require('./group/groupBg.jpg'),
     //朋友圈内容
     xlAvatar: require('./group/xlAvatar.jpg'),
     wytAvatar: require('./group/wytAvatar.jpg'),
     xswAvatar: require('./group/xswAvatar.jpg'),
     qhxAvatar: require('./group/qhxAvatar.jpg'),
+    //商店轮
+        //轮播图
+        swiperO: require('./letaostore/swiper1.jpg'),
+        swiperT: require('./letaostore/swiper2.jpg'),
 
     xlImg: require('./group/xlImg.jpg'),
     wytImg: require('./group/wytImg.jpg'),
@@ -26,6 +30,7 @@ const Images = {
     //预约课程
     course1:require('./course1.jpg'),
     course2:require('./course2.jpg'),
+
 }
 
 export {

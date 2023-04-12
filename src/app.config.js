@@ -4,6 +4,7 @@ export default defineAppConfig({
   pages: [
     'pages/index/index',
     'pages/friendgroup/friendgroup',
+    'pages/letaostore/letaostore',
     'pages/user/user',
     'pages/knowledge/knowledge',
     'pages/ordercoach/ordercoach',
@@ -36,11 +37,17 @@ export default defineAppConfig({
         selectedIconPath:'./static/tabBar/home.png',
         text:'首页'
       },
+      // {
+      //   pagePath:'pages/friendgroup/friendgroup',
+      //   iconPath:'./static/tabBar/movementout.jpg',
+      //   selectedIconPath:'./static/tabBar/movement.png',
+      //   text:'运动圈'
+      // },
       {
-        pagePath:'pages/friendgroup/friendgroup',
-        iconPath:'./static/tabBar/movementout.jpg',
-        selectedIconPath:'./static/tabBar/movement.png',
-        text:'运动圈'
+        pagePath:'pages/letaostore/letaostore',
+        iconPath:'./static/tabBar/shopout.jpg',
+        selectedIconPath:'./static/tabBar/shop.png',
+        text:'商城'
       },
       {
         pagePath:'pages/user/user',
