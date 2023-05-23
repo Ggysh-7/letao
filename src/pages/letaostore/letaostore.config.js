@@ -1,3 +1,6 @@
 export default definePageConfig({
-  navigationBarTitleText: '商城'
+  navigationBarTitleText: '商城',
+  enablePullDownRefresh: true,
+  onReachBottomDistance: 50,
+
 })

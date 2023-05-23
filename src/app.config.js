@@ -3,7 +3,6 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
-    'pages/friendgroup/friendgroup',
     'pages/letaostore/letaostore',
     'pages/user/user',
     'pages/knowledge/knowledge',
@@ -14,19 +13,22 @@ export default defineAppConfig({
     //内置页面
     'pages/knowledgedetail/knowledgedetail',
     'pages/coachdetail/coachdetail',
+    'pages/coursedetail/coursedetail',
+    'pages/homeknowledgedetail/homeknowledgedetail',
     'pages/aboutus/aboutus',
     'pages/allorder/allorder',
+    'pages/shopcart/shopcart',
 
   ],
   window: {
-    backgroundTextStyle: 'dark',
-    navigationBarBackgroundColor: '#000000',
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#ffffff',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'white',
+    navigationBarTextStyle: 'black',
   },
   tabBar:{
     // custom: true,
-    backgroundColor:'#fff',
+    backgroundColor:'#',
     color:'#000000',
     selectedColor:'#3399FF',
     position:'bottom',
@@ -37,12 +39,6 @@ export default defineAppConfig({
         selectedIconPath:'./static/tabBar/home.png',
         text:'首页'
       },
-      // {
-      //   pagePath:'pages/friendgroup/friendgroup',
-      //   iconPath:'./static/tabBar/movementout.jpg',
-      //   selectedIconPath:'./static/tabBar/movement.png',
-      //   text:'运动圈'
-      // },
       {
         pagePath:'pages/letaostore/letaostore',
         iconPath:'./static/tabBar/shopout.jpg',

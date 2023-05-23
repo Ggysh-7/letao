@@ -22,7 +22,7 @@ export default class ordercoach extends Component {
       {
         key:'2',
         coachImg:Images.coach2,
-        coachName:'侯波文',
+        coachName:'王彭波',
         coachInfo:'学校头衔：KFCC世界自由摔跤金牌；WBH私人健身教练；KFC终身荣誉会员',
         coachOrder:false,
       },
@@ -35,14 +35,14 @@ export default class ordercoach extends Component {
       },
       {
         key:'4',
-        coachImg:Images.coach4,
+        coachImg:Images.coach1,
         coachName:'徐隆',
         coachInfo:'学校头衔：CFS2022年国际体能大赛亚军；WFK世界自由搏击联合会综合格斗裁判员；LX私人健身教练，XL私人裁判员；CFPL终身荣誉会员',
         coachOrder:false,
       },
       {
         key:'5',
-        coachImg:Images.coach4,
+        coachImg:Images.coach1,
         coachName:'魏亦同',
         coachInfo:'学校头衔：CFS2019年国际体能大赛冠军；WFK世界自由搏击联合会综合格斗裁判员；TYW私人健身教练，TYW私人裁判员；CFPL终身荣誉会员',
         coachOrder:false,

@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { View } from '@tarojs/components'
 import './allorder.scss'
+import Taro from '@tarojs/taro'
 import { Images } from '../../static/images/Images'
 
 export default class allorder extends Component {
@@ -46,7 +47,11 @@ export default class allorder extends Component {
         </View>
         {
           tabValue ? 
-          <View className='tabPageCourse'>
+          <View className='tabPageCourse' onClick={()=>{
+              Taro.navigateTo({
+                  url:`/pages/coursedetail/coursedetail?id=${1}&order=${true}`,
+              })
+          }}>
             <View className='courseCard-allorder'>
               <View className='courseImg-allorder' style={{backgroundImage:`url(${Images.course1})`,backgroundSize:'100% 100%'}}></View>
               <View className='courseDetail-allorder'>

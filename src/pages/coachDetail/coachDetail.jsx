@@ -3,6 +3,7 @@ import { View } from '@tarojs/components'
 import './coachdetail.scss'
 import { getCurrentInstance } from '@tarojs/taro'
 import { Images } from '../../static/images/Images'
+import { OsIcon,OsToast } from 'ossaui'
 
 export default class coachdetail extends Component {
   constructor(props){
@@ -12,7 +13,7 @@ export default class coachdetail extends Component {
       windowHeight:'100%',
 
       coachId:null,
-
+      isOrder:false,
     }
     this.mockData = [
       {
@@ -27,7 +28,7 @@ export default class coachdetail extends Component {
       {
         key:'2',
         coachImg:Images.coach2,
-        coachName:'侯波文',
+        coachName:'王彭波',
         coachInfo:'学校头衔：KFCC世界自由摔跤金牌；WBH私人健身教练；KFC终身荣誉会员',
         coachMajor:'睡眠质量监测师、综合格斗技术教练',
         coachHonor:'KFC终身荣誉会员',
@@ -76,7 +77,7 @@ export default class coachdetail extends Component {
 
 
   render () {
-    const { windowWidth,windowHeight,coachId } = this.state
+    const { windowWidth,windowHeight,coachId,isOrder } = this.state
     return (
       <View className='coachDetail' style={{minWidth:windowWidth,minHeight:windowHeight}}>
         <View className='coachNam'>{ this.mockData[coachId].coachName }</View>
@@ -92,9 +93,9 @@ export default class coachdetail extends Component {
             this.mockData[coachId].coachOrder ?
              <View className='btnBox'>
               <View  iew className='letaoBtn' onClick={()=>{
-                console.log('123');
+                this.setState({isOrder:!isOrder})
               }}>
-                <View className="btnText">预约</View>
+                { isOrder ? <View className="btnText">已预约</View>:<View className="btnText">预约</View> }
               </View>
             </View>
             :
@@ -111,6 +112,7 @@ export default class coachdetail extends Component {
           </View> */}
         </View>
         <View style={{width:'100%',height:'80px'}}></View>
+        <OsToast isShow={isOrder} text='预约成功'/>
       </View>
     )
   }

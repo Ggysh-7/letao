@@ -1,0 +1,32 @@
+.homeknowledgedetail{
+    font-size: 30px;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .homeknowledgedetailBox{
+        width: 90%;
+        padding-top: 50px;
+    }
+    .homeknowledgedetailTit{
+        margin-bottom: 15px ;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .homeknowledgedetailAut{
+        width: 100%;
+        border-bottom: 1px solid grey;
+        color:grey;
+        font-size: 20px;
+        display: flex;
+    }
+    .homeknowledgedetailImg{
+        margin: 15px auto;
+    }
+    .homeknowledgedetailCon{
+        width: 100%;
+        margin: 15px auto;
+    }
+}

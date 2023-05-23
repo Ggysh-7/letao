@@ -1,7 +1,6 @@
 import { Component } from 'react'
 import Taro from '@tarojs/taro'
 import { View, Text, Image } from '@tarojs/components'
-// import { Button } from '@nutui/nutui-react-taro';
 import './index.scss'
 
 export default class Index extends Component {
@@ -34,19 +33,6 @@ export default class Index extends Component {
             <View className='navItem-home' onClick={()=>{
               Taro.navigateTo({
                 url:'/pages/knowledge/knowledge',
-                // events: {
-                //   // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
-                //   acceptDataFromOpenedPage: function(data) {
-                //     console.log(data)
-                //   },
-                //   someEvent: function(data) {
-                //     console.log(data)
-                //   }
-                // },
-                // success: function (res) {
-                //   // 通过eventChannel向被打开页面传送数据
-                //   res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
-                // }
               })
             }}>        
               <Image className='navItemImg-home'
@@ -89,7 +75,9 @@ export default class Index extends Component {
           </View>
 
           <View className='knowledge-home' onClick={()=>{
-            console.log('123');
+            Taro.navigateTo({
+              url:'/pages/homeknowledgedetail/homeknowledgedetail',
+            })
           }}>
             <View className='knowledgeImg-home'></View>
             <View className='knowledgeTit-home'>
